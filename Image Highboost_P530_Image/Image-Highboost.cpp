@@ -27,7 +27,7 @@ using namespace cv;
 
 //+++++++++++++++++++++++++++++++++ RGB TO RGBA KERNEL ++++++++++++++++++++++++++++++++++++++++++++++
 // OpenCL RGB to RGBA Kernel Which Is Run For Every Work Items Created.
-const char* RGBA_Kernel 
+const char* RGBA_Kernel =
 "#pragma OPENCL EXTENSION cl_khr_fp32 : enable							\n" \
 "__constant sampler_t image_sampler = CLK_NORMALIZED_COORDS_FALSE |				\n" \
 "				CLK_ADDRESS_CLAMP_TO_EDGE | CLK_FILTER_NEAREST;			\n" \
